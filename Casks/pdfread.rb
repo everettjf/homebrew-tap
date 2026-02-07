@@ -1,6 +1,6 @@
 cask "pdfread" do
-  version "0.1.4"
-  sha256 "ee1f22360aa635d82a41bf46b76cc139517a3510ca7d92ff6d14cedc79206d32"
+  version "0.1.5"
+  sha256 "6269cde859143b445523dd55ee78e8d496078984974b2d9f17e1bde2260e0933"
 
   url "https://github.com/everettjf/PDFRead/releases/download/v#{version}/PDFRead.dmg"
   name "PDFRead"
