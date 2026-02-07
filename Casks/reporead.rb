@@ -1,6 +1,6 @@
 cask "reporead" do
-  version "1.1.8"
-  sha256 "30a18257223fb682ffc457b1aa7e8af268a91935471c75a4d4ae33bca751dbf5"
+  version "1.1.9"
+  sha256 "0b8090e47e092d66eb1ebc1d415127630e8edfe352cff2c8479e64c3d5d2a714"
 
   url "https://github.com/everettjf/RepoRead/releases/download/v#{version}/RepoRead.dmg"
   name "RepoRead"
