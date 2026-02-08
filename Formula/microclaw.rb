@@ -1,8 +1,8 @@
 class Microclaw < Formula
   desc "Agentic AI assistant for Telegram — web search, scheduling, memory, tool execution"
   homepage "https://github.com/microclaw/microclaw"
-  url "https://github.com/microclaw/microclaw/releases/download/v0.0.23/microclaw-0.0.23-aarch64-apple-darwin.tar.gz"
-  sha256 "6382cc60bf7767eba3fd0e6b72396014d8eb1f4ade43ebbcf3dbfacd9b612728"
+  url "https://github.com/microclaw/microclaw/releases/download/v0.0.24/microclaw-0.0.24-aarch64-apple-darwin.tar.gz"
+  sha256 "8393da05b1226970f6d6611013603842f589c448df9e3988e439f447229b6f59"
   license "MIT"
 
   def install
