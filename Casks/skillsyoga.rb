@@ -1,6 +1,6 @@
 cask "skillsyoga" do
-  version "0.1.8"
-  sha256 "a58a70a254a7854e537a1260d2658a2b553a9cb2a213954cf808b71122c6288f"
+  version "0.1.9"
+  sha256 "02e209289ca55c6c17dcf646d0d69cc154da471aabe34b2d34a15814d01fec32"
 
   url "https://github.com/microclaw/skillsyoga/releases/download/v#{version}/SkillsYoga.dmg"
   name "SkillsYoga"
