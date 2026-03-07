@@ -1,26 +1,26 @@
 class Donotsleep < Formula
   desc "Cross-platform CLI to keep your system awake"
   homepage "https://github.com/everettjf/donotsleep"
-  version "0.1.3"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.3/donotsleep-macos-arm64.tar.gz"
-      sha256 "0ebc9434c1c05ca0616422818c293676ba803b16368d62d091551e857194a5c6"
+      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.5/donotsleep-macos-arm64.tar.gz"
+      sha256 "d46571b963684f76ea7d558f04a04d8fbeed2cc3406dcb80a434e5eeffb7d681"
     else
-      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.3/donotsleep-macos-x86_64.tar.gz"
-      sha256 "9adf192e9ce12627761fadc3979cf16697c126327f5825c51495aa54a48630d8"
+      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.5/donotsleep-macos-x86_64.tar.gz"
+      sha256 "864df7a0ffa1896c9c7334c8cd9aa1f8ce138bd45d49696519b7852742764041"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.3/donotsleep-linux-arm64.tar.gz"
-      sha256 "df993a6ab6f39380ae04e0fd7f5d9caa742ddd145c734bff55212f5aad5952d8"
+      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.5/donotsleep-linux-arm64.tar.gz"
+      sha256 "1f5f11dac2ed174549d2e852d4e45d8842c84525a354c5ee63b5afa4d798f4ef"
     else
-      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.3/donotsleep-linux-x86_64.tar.gz"
-      sha256 "3875cc50bb3b8c3d42069942584077a1dde9d90cc372edbfe837abd9958ed5e1"
+      url "https://github.com/everettjf/donotsleep/releases/download/v0.1.5/donotsleep-linux-x86_64.tar.gz"
+      sha256 "1e056960ce14ed5b418a86e01c99d848b79aae734f2330fe89ebd3ca3971375e"
     end
   end
 
