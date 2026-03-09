@@ -1,8 +1,8 @@
 cask "machoexplorer" do
-  version "2.0.3"
-  sha256 "4a0018271d26669ce5ee6fd33d588490e2ce4e19f83aafbb7c2c52cab0b3c104"
+  version "2.0.4"
+  sha256 "15888cb6a1c8e688711376b4d13e06a107c0a382a129b5a7d6ff5d84439fd82a"
 
-  url "https://github.com/everettjf/MachOExplorer/releases/download/v2.0.3/MachOExplorer.dmg"
+  url "https://github.com/everettjf/MachOExplorer/releases/download/v2.0.4/MachOExplorer.dmg"
   name "MachOExplorer"
   desc "Mach-O and archive explorer"
   homepage "https://github.com/everettjf/MachOExplorer"
