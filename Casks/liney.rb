@@ -1,6 +1,6 @@
 cask "liney" do
-  version "1.0.9"
-  sha256 "37b19b01f5e3b6a276283ca9980e0dce7a64917170d55f74f791603540ba6a32"
+  version "1.0.10"
+  sha256 "73635e3570ac59ed34a979314a0159e8982baa694da2e0d25091256de847590d"
 
   url "https://github.com/everettjf/liney/releases/download/v#{version}/Liney-#{version}.dmg"
   name "Liney"
