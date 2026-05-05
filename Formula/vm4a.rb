@@ -1,8 +1,8 @@
 class Easyvm < Formula
   desc "Lightweight VM CLI for Apple Virtualization framework"
   homepage "https://github.com/everettjf/vm4a"
-  url "https://github.com/everettjf/vm4a/releases/download/v2.0.1/vm4a-cli-v2.0.1.tar.gz"
-  sha256 "2e95ca06e9c0bfd07033974f3a479dd6cb631ee91e6f67ae0c9b7faf98189583"
+  url "https://github.com/everettjf/vm4a/releases/download/v2.0.2/vm4a-cli-v2.0.2.tar.gz"
+  sha256 "3809d6f0f7fee25a5766ff8e887a11dcb3c43dc30d15128a064ab78e0d500b9b"
   license "MIT"
 
   depends_on :macos
