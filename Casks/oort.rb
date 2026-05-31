@@ -8,10 +8,10 @@ cask "oort" do
 
   url "https://github.com/everettjf/oort/releases/download/v#{version}/oort-#{version}.dmg"
   name "Oort"
-  desc "Lightweight, OrbStack-style Docker & Linux runtime for macOS"
+  desc "Lightweight, OrbStack-style Docker & Linux runtime"
   homepage "https://github.com/everettjf/oort"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "oort.app"
 end
