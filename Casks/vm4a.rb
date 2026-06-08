@@ -7,7 +7,7 @@ cask "vm4a" do
   desc "Lightweight virtual machine app for macOS"
   homepage "https://github.com/everettjf/vm4a"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "VM4A.app"
 end
