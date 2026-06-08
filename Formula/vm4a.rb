@@ -1,8 +1,8 @@
-class Easyvm < Formula
+class Vm4a < Formula
   desc "Lightweight VM CLI for Apple Virtualization framework"
   homepage "https://github.com/everettjf/vm4a"
-  url "https://github.com/everettjf/vm4a/releases/download/v2.0.2/vm4a-cli-v2.0.2.tar.gz"
-  sha256 "3809d6f0f7fee25a5766ff8e887a11dcb3c43dc30d15128a064ab78e0d500b9b"
+  url "https://github.com/everettjf/vm4a/releases/download/v2.6.0/vm4a-cli-v2.6.0.tar.gz"
+  sha256 "f976afa2e9cd466da6ebfa97f2f2d48e4232e9e89e8a97e861e4bb8a78cf1133"
   license "MIT"
 
   depends_on :macos
@@ -13,7 +13,7 @@ class Easyvm < Formula
   end
 
   test do
-    assert_match "VM4A standalone CLI", shell_output("#{bin}/vm4a --help")
+    assert_match "Virtual Machines for Agents", shell_output("#{bin}/vm4a --help")
   end
 
   def caveats
