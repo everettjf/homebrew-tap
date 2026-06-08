@@ -1,8 +1,8 @@
 cask "vm4a" do
-  version "2.0.2"
-  sha256 "ed226431011cdb0168532abab35ab0fa27b96379f17797d82723b89228e0b9ba"
+  version "2.6.0"
+  sha256 "07b58f5af8055a0b6c9e78bc74195ceeadb6c99fe8a58688b0554aae6e5fd7a0"
 
-  url "https://github.com/everettjf/vm4a/releases/download/v2.0.2/VM4A.dmg"
+  url "https://github.com/everettjf/vm4a/releases/download/v2.6.0/VM4A.dmg"
   name "VM4A"
   desc "Lightweight virtual machine app for macOS"
   homepage "https://github.com/everettjf/vm4a"
