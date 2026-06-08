@@ -1,6 +1,6 @@
 cask "vm4a" do
   version "2.6.0"
-  sha256 "07b58f5af8055a0b6c9e78bc74195ceeadb6c99fe8a58688b0554aae6e5fd7a0"
+  sha256 "f9c3f24daa6989ff3aa962c6fca601acc0112a12878c18ffb6b40816c76ab976"
 
   url "https://github.com/everettjf/vm4a/releases/download/v2.6.0/VM4A.dmg"
   name "VM4A"
