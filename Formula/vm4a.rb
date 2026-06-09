@@ -1,8 +1,8 @@
 class Vm4a < Formula
   desc "Lightweight VM CLI for Apple Virtualization framework"
   homepage "https://github.com/everettjf/vm4a"
-  url "https://github.com/everettjf/vm4a/releases/download/v2.6.1/vm4a-cli-v2.6.1.tar.gz"
-  sha256 "480ae51068d01368323c62c7fa515aa836467d45b8b15372af1f56d96b8b1e60"
+  url "https://github.com/everettjf/vm4a/releases/download/v2.6.2/vm4a-cli-v2.6.2.tar.gz"
+  sha256 "582247e8156cd7b0883804190523d8b7e41baba145abae7a904c6846b5bdc941"
   license "MIT"
 
   depends_on :macos
