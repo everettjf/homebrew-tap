@@ -1,4 +1,4 @@
-# Homebrew cask for oort's GUI, published from the v0.1.0 GitHub release
+# Homebrew cask for oort's GUI, published from the GitHub release
 # (a Developer ID-signed, notarized + stapled DMG — see docs/packaging.md).
 #
 # NOTE: today's .app is a front-end that drives a *local* oort install — it
@@ -11,9 +11,10 @@ cask "oort" do
 
   url "https://github.com/everettjf/oort/releases/download/v#{version}/oort-#{version}.dmg"
   name "oort"
-  desc "Lightweight, OrbStack-style Docker & Linux runtime for macOS"
+  desc "Lightweight, OrbStack-style Docker & Linux runtime"
   homepage "https://github.com/everettjf/oort"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
+
   app "oort.app"
 end
