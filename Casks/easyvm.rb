@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "easyvm" do
-  version "3.2.5"
-  sha256 "e88251f6c03487f3dc910adfa38e9f3fd7eac028195b569176fee0356fc6d842"
+  version "3.2.6"
+  sha256 "f267b9bb206415b7e5a7c72c7dc1f7a78739131b76dae0fd200939835b21d364"
 
   url "https://github.com/everettjf/easyvm/releases/download/v#{version}/EasyVM-#{version}.zip"
   name "EasyVM"
@@ -11,7 +11,7 @@ cask "easyvm" do
   homepage "https://everettjf.github.io/easyvm/"
 
   depends_on arch: :arm64
-  depends_on macos: :ventura
+  depends_on macos: :tahoe
 
   app "EasyVM.app"
 
