@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "easyvm" do
-  version "3.2.18"
-  sha256 "a8e3c431fdadc9aad06df3424762a8022c3106f3bd55a6d9450ce92f51c2f5c8"
+  version "3.2.19"
+  sha256 "3f5eda22e8f46ae0b1f933be79094690c5ab4731a66c5e6ff2ed3cfa58200ec4"
 
   url "https://github.com/everettjf/easyvm/releases/download/v#{version}/EasyVM-#{version}.zip?notarized=1"
   name "EasyVM"
