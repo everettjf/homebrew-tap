@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "easyvm" do
-  version "3.2.19"
-  sha256 "3f5eda22e8f46ae0b1f933be79094690c5ab4731a66c5e6ff2ed3cfa58200ec4"
+  version "3.2.20"
+  sha256 "d351ec27bf5fe44c114dc16affd1e0141d339878219f4f152e4f1ac665faba1a"
 
   url "https://github.com/everettjf/easyvm/releases/download/v#{version}/EasyVM-#{version}.zip?notarized=1"
   name "EasyVM"
@@ -14,6 +14,7 @@ cask "easyvm" do
   depends_on macos: :tahoe
 
   app "EasyVM.app"
+  binary "#{appdir}/EasyVM.app/Contents/Helpers/easyvm"
 
   zap trash: [
     "~/Library/Application Support/EasyVM",
