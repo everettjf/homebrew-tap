@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "easyvm" do
-  version "3.2.12"
-  sha256 "a6fa585c048a159ca788c6541a3aee8a2547374a784b12faaa3125e868afa398"
+  version "3.2.13"
+  sha256 "833b31b9931ac5dd18eec7af02d065129f6fd08cea5691231246cbf26954910a"
 
   url "https://github.com/everettjf/easyvm/releases/download/v#{version}/EasyVM-#{version}.zip?notarized=1"
   name "EasyVM"
@@ -14,10 +14,12 @@ cask "easyvm" do
   depends_on macos: :tahoe
 
   # macOS 27 beta can leave notarized Virtualization.framework apps suspended
-  # in dyld when Homebrew's archive quarantine is propagated to the app.
+  # in dyld when Homebrew propagates archive security metadata to the app.
   preflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", staged_path/"EasyVM.app"]
+    %w[com.apple.quarantine com.apple.provenance].each do |attribute|
+      system_command "/usr/bin/xattr",
+                     args: ["-dr", attribute, staged_path/"EasyVM.app"]
+    end
   end
 
   app "EasyVM.app"
