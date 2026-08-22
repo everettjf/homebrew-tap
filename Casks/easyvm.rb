@@ -2,10 +2,10 @@
 # frozen_string_literal: true
 
 cask "easyvm" do
-  version "3.2.10"
-  sha256 "d898c9526b6ed855f96942a27787b413b74b2f87ba2bc685943e10ca2dd76715"
+  version "3.2.11"
+  sha256 "8d3b9b0d76a9cc2d414e80c526356dcfffe952199745dd82856d0f72869ca492"
 
-  url "https://github.com/everettjf/easyvm/releases/download/v#{version}/EasyVM-#{version}.zip?stapled=1"
+  url "https://github.com/everettjf/easyvm/releases/download/v#{version}/EasyVM-#{version}.zip?notarized=1"
   name "EasyVM"
   desc "Simple native virtual machines for Apple silicon Macs"
   homepage "https://xnu.app/easyvm"
