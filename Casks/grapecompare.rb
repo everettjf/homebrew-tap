@@ -1,6 +1,6 @@
 cask "grapecompare" do
-  version "1.0.14"
-  sha256 "95691d80f71db5dbdd40b5431dc3726444d144d0bc4dd3675b5fb8560b0edf93"
+  version "1.0.15"
+  sha256 "5c66cd3ffdf6eb3d35e8b2e1e013818ddacd4b5ce6b4c509d4c5a7590575b68b"
 
   url "https://github.com/everettjf/grapecompare/releases/download/v#{version}/GrapeCompare-#{version}.zip"
   name "GrapeCompare"
