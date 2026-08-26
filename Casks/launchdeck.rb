@@ -1,6 +1,6 @@
 cask "launchdeck" do
-  version "2.0.6"
-  sha256 "e4cbbf4c14c006fdaf3cb86bf219520c7c7587b553ff2a7c04cc0f0eb9795a5a"
+  version "2.0.7"
+  sha256 "447689ce4c85ab32d12dda31eaf4d63a61c9efe2a67e3c842f358774abb599cc"
 
   url "https://github.com/everettjf/launchdeck/releases/download/v#{version}/LaunchDeck-#{version}.zip"
   name "LaunchDeck"
