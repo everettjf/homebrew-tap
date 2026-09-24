@@ -1,6 +1,6 @@
 cask "typetide" do
-  version "0.1.15"
-  sha256 "7179af41e9e84388468cb8b61ed6d763a285cb93c220989a4d2192919dffe4e5"
+  version "0.1.16"
+  sha256 "9cb4c979bce358d143c81c7ee1338a35ebf111e5a59d180e79be9828f76c1ba0"
 
   url "https://github.com/everettjf/typetide/releases/download/v#{version}/TypeTide-#{version}.dmg"
   name "TypeTide"
