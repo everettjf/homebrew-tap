@@ -7,7 +7,7 @@ cask "launchdeck" do
   desc "Private local-first application launcher"
   homepage "https://xnu.app/launchdeck/"
 
-  depends_on macos: :sequoia
+  depends_on macos: :tahoe
 
   app "LaunchDeck.app"
 
