@@ -29,16 +29,19 @@ class ScriptwidgetCli < Formula
   end
 
   test do
-    (testpath/"Widget").mkpath
-    (testpath/"Widget/widget.json").write <<~JSON
-      {"formatVersion":2,"id":"com.example.brew-test","name":"Brew Test","version":"1.0.0","runtimeVersion":"1.0","entry":"main.jsx","supportedFamilies":["systemMedium"],"permissions":[],"networkDomains":[]}
-    JSON
-    (testpath/"Widget/main.jsx").write('$render(<text>Homebrew</text>);')
-    report = JSON.parse(shell_output("#{bin}/scriptwidget check #{testpath}/Widget --format json"))
+    report = JSON.parse(shell_output("#{bin}/scriptwidget doctor --format json"))
     assert_equal "passed", report.fetch("status")
-    assert_equal "notRun", report.dig("checks", "execute")
-    (testpath/"Widget/widget.json").write('{"formatVersion":99}')
+    assert_equal "valid", report.fetch("signature")
+    assert_equal true, report.fetch("workerSandbox")
+    assert_path_exists Pathname(report.fetch("skillPath"))/"SKILL.md"
+
+    # Homebrew's outer sandbox prevents App Sandbox activation. Native execution
+    # is exercised separately in release/CI smoke tests; verify controller denial here.
+    (testpath/"Widget").mkpath
+    (testpath/"outside.txt").write("outside")
+    (testpath/"Widget/escape").make_symlink(testpath/"outside.txt")
     report = JSON.parse(shell_output("#{bin}/scriptwidget check #{testpath}/Widget --format json", 1))
     assert_equal "failed", report.fetch("status")
+    assert_equal "package.path", report.fetch("diagnostics").first.fetch("code")
   end
 end
