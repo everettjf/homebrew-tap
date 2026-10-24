@@ -2,6 +2,7 @@ class ScriptwidgetCli < Formula
   desc "Native widget validation and previews for Coding Agent workflows"
   homepage "https://github.com/everettjf/scriptwidget"
   version "0.1.0"
+  revision 1
   license "MIT"
 
   on_arm do
@@ -16,7 +17,10 @@ class ScriptwidgetCli < Formula
   depends_on macos: :tahoe
 
   def install
-    libexec.install "ScriptWidgetCLI.app"
+    # ditto merges AppleDouble metadata instead of leaving extra sealed-bundle files.
+    payload = buildpath/"signed-payload"
+    system "/usr/bin/ditto", "-x", "-k", cached_download, payload
+    libexec.install payload/"ScriptWidgetCLI.app"
     (bin/"scriptwidget").write <<~SH
       #!/bin/sh
       exec "#{libexec}/ScriptWidgetCLI.app/Contents/MacOS/scriptwidget" "$@"
