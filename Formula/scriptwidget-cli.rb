@@ -13,7 +13,6 @@ class ScriptwidgetCli < Formula
     sha256 "5f2d94acb8e3b938a3bd621c27e7b09c0fed6e89d48173a652adf1a68a4dae2e"
   end
 
-  depends_on :macos
   depends_on macos: :tahoe
 
   def install
