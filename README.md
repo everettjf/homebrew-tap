@@ -11,6 +11,18 @@ brew tap microclaw/tap
 brew install tap/microclaw
 ```
 
+## ipatool-rs
+
+An experimental Apple Silicon macOS preview of the Rust App Store and FairPlay CLI. For practical use, prefer the original [ipatool](https://github.com/majd/ipatool) and [UnFairPlay](https://github.com/DrWhax/unfairplay) projects.
+
+```sh
+brew tap everettjf/tap
+brew install everettjf/tap/ipatool-rs
+ipatool-rs --version
+```
+
+See the [release notes](https://github.com/everettjf/ipatool-rs/releases/tag/v0.1.0-preview.1) for the tested platform and known limitations.
+
 ## XcodeFit
 
 A native macOS app for inspecting Xcode storage and reviewing Standard (default) or Deep cleanup. Supports Apple Silicon and Intel on macOS 14 or later, with English, Simplified Chinese, Traditional Chinese, Japanese, and Korean interfaces.
