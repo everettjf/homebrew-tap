@@ -1,8 +1,8 @@
 cask "typetide" do
-  version "0.1.21"
-  sha256 "83068ab9bad6e8868c3e8b30eff29ede183e3ad95df6fb98e095babb78fe5d94"
+  version "0.1.21,2"
+  sha256 "8add40a79f50bde2244ced7551cc3b2fb9886977f248de8b23451759ef686c71"
 
-  url "https://github.com/everettjf/typetide/releases/download/v#{version}/TypeTide-#{version}.dmg"
+  url "https://github.com/everettjf/typetide/releases/download/v#{version.csv.first}/TypeTide-#{version.csv.first}.dmg"
   name "TypeTide"
   desc "System-wide AI translation and inline rewrite"
   homepage "https://github.com/everettjf/typetide"
@@ -19,7 +19,8 @@ cask "typetide" do
           match = asset["name"]&.match(regex)
           next if match.blank?
 
-          match[1]
+          build = asset["label"]&.match(/build\s+(\d+)/i)&.captures&.first
+        build ? "#{match[1]},#{build}" : match[1]
         end
       end.flatten
     end
