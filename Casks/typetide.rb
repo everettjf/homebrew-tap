@@ -19,8 +19,8 @@ cask "typetide" do
           match = asset["name"]&.match(regex)
           next if match.blank?
 
-          build = asset["label"]&.match(/build\s+(\d+)/i)&.captures&.first
-        build ? "#{match[1]},#{build}" : match[1]
+          build = asset["label"].to_s[/build\s+(\d+)/i, 1]
+          build ? "#{match[1]},#{build}" : match[1]
         end
       end.flatten
     end
