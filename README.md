@@ -13,15 +13,28 @@ brew install tap/microclaw
 
 ## ipatool-rs
 
-An experimental Apple Silicon macOS preview of the Rust App Store and FairPlay CLI. For practical use, prefer the original [ipatool](https://github.com/majd/ipatool) and [UnFairPlay](https://github.com/DrWhax/unfairplay) projects.
+Experimental Rust App Store and FairPlay tools for Apple Silicon macOS, available
+as a native dark desktop and a separate CLI. For practical use, prefer the
+original [ipatool](https://github.com/majd/ipatool) and
+[UnfairPlay](https://github.com/DrWhax/unfairplay) projects.
 
 ```sh
 brew tap everettjf/tap
+# Desktop app:
+brew install --cask everettjf/tap/ipatool-rs-gui
+# CLI:
 brew install everettjf/tap/ipatool-rs
 ipatool-rs --version
 ```
 
-See the [release notes](https://github.com/everettjf/ipatool-rs/releases/tag/v0.1.0-preview.1) for the tested platform and known limitations.
+The desktop and CLI are Developer ID signed and notarized. Open **IPATOOL-RS**
+from Applications. Desktop requires macOS 12 or later; protected FairPlay
+preparation requires macOS 13 or later and explicit administrator approval.
+Models stay private and authorization-specific. Remove collection access in the
+app before uninstalling; the cask preserves account state, downloads and models.
+
+See the [release notes](https://github.com/everettjf/ipatool-rs/releases/tag/v0.3.0)
+for controlled macOS acceptance and remaining experimental gates.
 
 ## XcodeFit
 
