@@ -1,11 +1,11 @@
 cask "typetide" do
-  version "0.1.21,2"
-  sha256 "8add40a79f50bde2244ced7551cc3b2fb9886977f248de8b23451759ef686c71"
+  version "0.1.22,3"
+  sha256 "390b4813ff96c5138ab6e795d27e83fbeef935c891cbaba447c488b41a433da0"
 
   url "https://github.com/everettjf/typetide/releases/download/v#{version.csv.first}/TypeTide-#{version.csv.first}.dmg"
   name "TypeTide"
   desc "System-wide AI translation and inline rewrite"
-  homepage "https://github.com/everettjf/typetide"
+  homepage "https://atomsprout.com/typetide/"
 
   # Releases are shared with Windows builds; only releases carrying a macOS DMG count.
   livecheck do
