@@ -5,7 +5,7 @@ cask "machoexplorer" do
   url "https://github.com/everettjf/MachOExplorer/releases/download/v2.0.17/MachOExplorer.dmg"
   name "MachOExplorer"
   desc "Mach-O and archive explorer"
-  homepage "https://github.com/everettjf/MachOExplorer"
+  homepage "https://atomsprout.com/machoexplorer/"
 
   app "MachOExplorer.app"
 end

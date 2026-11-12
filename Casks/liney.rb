@@ -5,7 +5,7 @@ cask "liney" do
   url "https://github.com/everettjf/liney/releases/download/v#{version}/Liney-#{version}.dmg"
   name "Liney"
   desc "Native macOS terminal workspace manager for git repositories, worktrees, and split panes."
-  homepage "https://github.com/everettjf/liney"
+  homepage "https://atomsprout.com/liney/"
 
   app "Liney.app"
 end

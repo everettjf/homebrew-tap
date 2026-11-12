@@ -5,7 +5,7 @@ cask "launchdeck" do
   url "https://github.com/everettjf/launchdeck/releases/download/v#{version}/LaunchDeck-#{version}.zip"
   name "LaunchDeck"
   desc "Private local-first application launcher"
-  homepage "https://xnu.app/launchdeck/"
+  homepage "https://atomsprout.com/launchdeck/"
 
   depends_on macos: :tahoe
 
