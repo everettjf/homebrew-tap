@@ -1,16 +1,16 @@
 class ScriptwidgetCli < Formula
   desc "Native widget validation and previews for Coding Agent workflows"
   homepage "https://github.com/everettjf/scriptwidget"
-  version "0.2.0"
-  license "MIT"
+  version "0.2.1"
+  license "Apache-2.0"
 
   on_arm do
-    url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.0/scriptwidget-cli-0.2.0-macos-arm64.zip"
-    sha256 "d0e9bb17eeefb2521b2f500ea0bf6dce6d88f973529f9f99b08b063f7c68560f"
+    url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.1/scriptwidget-cli-0.2.1-macos-arm64.zip"
+    sha256 "d7c4ce71386b761d2e68d45592b2fe45d06efd6d8c6ad61d89da3752f9f441fe"
   end
   on_intel do
-    url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.0/scriptwidget-cli-0.2.0-macos-x86_64.zip"
-    sha256 "0a99ffbb48f244793cb1168f0a1b81f14b0b1e70418f76963b769cae6044e443"
+    url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.1/scriptwidget-cli-0.2.1-macos-x86_64.zip"
+    sha256 "e0ba4e36f50955660c41d408ac2aab55fcc625565eb3c8fbb1cbddc300358a8c"
   end
 
   depends_on macos: :tahoe
