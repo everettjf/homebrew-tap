@@ -4,16 +4,17 @@ class ScriptwidgetCli < Formula
   version "0.2.1"
   license "Apache-2.0"
 
-  on_arm do
-    url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.1/scriptwidget-cli-0.2.1-macos-arm64.zip"
-    sha256 "d7c4ce71386b761d2e68d45592b2fe45d06efd6d8c6ad61d89da3752f9f441fe"
-  end
-  on_intel do
-    url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.1/scriptwidget-cli-0.2.1-macos-x86_64.zip"
-    sha256 "e0ba4e36f50955660c41d408ac2aab55fcc625565eb3c8fbb1cbddc300358a8c"
-  end
-
   depends_on macos: :tahoe
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.1/scriptwidget-cli-0.2.1-macos-arm64.zip"
+      sha256 "d7c4ce71386b761d2e68d45592b2fe45d06efd6d8c6ad61d89da3752f9f441fe"
+    else
+      url "https://github.com/everettjf/scriptwidget/releases/download/cli-v0.2.1/scriptwidget-cli-0.2.1-macos-x86_64.zip"
+      sha256 "e0ba4e36f50955660c41d408ac2aab55fcc625565eb3c8fbb1cbddc300358a8c"
+    end
+  end
 
   def install
     # ditto merges AppleDouble metadata instead of leaving extra sealed-bundle files.

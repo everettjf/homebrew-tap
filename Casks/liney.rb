@@ -4,8 +4,10 @@ cask "liney" do
 
   url "https://github.com/everettjf/liney/releases/download/v#{version}/Liney-#{version}.dmg"
   name "Liney"
-  desc "Native macOS terminal workspace manager for git repositories, worktrees, and split panes."
+  desc "Terminal workspace manager for Git repositories, worktrees, and split panes"
   homepage "https://atomsprout.com/liney/"
+
+  depends_on :macos
 
   app "Liney.app"
 end

@@ -7,5 +7,7 @@ cask "machoexplorer" do
   desc "Mach-O and archive explorer"
   homepage "https://atomsprout.com/machoexplorer/"
 
+  depends_on :macos
+
   app "MachOExplorer.app"
 end
