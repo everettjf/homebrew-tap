@@ -1,8 +1,8 @@
 class IpatoolRs < Formula
   desc "Experimental Rust rewrite of App Store and FairPlay command-line tools"
   homepage "https://github.com/everettjf/ipatool-rs"
-  url "https://github.com/everettjf/ipatool-rs/releases/download/v0.3.0/ipatool-rs-0.3.0-macos-arm64.tar.gz"
-  sha256 "3dbadce0a6ccf10af3b56ee5192890a86d21e4394b7f916372083f9931a79496"
+  url "https://github.com/everettjf/ipatool-rs/releases/download/v0.3.1/ipatool-rs-0.3.1-macos-arm64.tar.gz"
+  sha256 "7d3a0537aad2339f113e86b67d0aabeaab447d6a1ad43d78b87481f4a793d468"
   license all_of: ["MIT", "Apache-2.0"]
 
   depends_on arch: :arm64
@@ -14,7 +14,7 @@ class IpatoolRs < Formula
   end
 
   test do
-    assert_match "0.3.0", shell_output("#{bin}/ipatool-rs --version")
+    assert_match "0.3.1", shell_output("#{bin}/ipatool-rs --version")
     assert_match "search", shell_output("#{bin}/ipatool-rs --help")
   end
 end
